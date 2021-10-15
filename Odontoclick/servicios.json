@@ -1,0 +1,64 @@
+{
+    "servicios": [
+        {
+            "id": 1,
+            "nombre": "Ortodoncia",
+            "precio": 1500
+        },
+        {
+            "id": 2,
+            "nombre": "Restauracion",
+            "precio": 2800
+        },
+        {
+            "id": 3,
+            "nombre": "Blanqueamiento",
+            "precio": 1500
+        },
+        {
+            "id": 4,
+            "nombre": "Protesis",
+            "precio": 3000
+        },
+        {
+            "id": 5,
+            "nombre": "Extracciones",
+            "precio": 1000
+        },
+        {
+            "id": 6,
+            "nombre": "Endodoncia",
+            "precio": 1800
+        },
+        {
+            "id": 7,
+            "nombre": "Ortodoncia",
+            "precio": 500
+        },
+        {
+            "id": 8,
+            "nombre": "Implates",
+            "precio": 4000
+        },
+        {
+            "id": 9,
+            "nombre": "Protesis Fijas",
+            "precio": 2200
+        },
+        {
+            "id": 10,
+            "nombre" : "Niños",
+            "precio": 800
+        },
+        {
+            "id": 10,
+            "nombre" : "General",
+            "precio": 800
+        },
+        {
+            "id": 10,
+            "nombre" : "Revicios",
+            "precio": 800
+        }
+    ]
+}

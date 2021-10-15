@@ -1,0 +1,63 @@
+
+
+body{
+    background:  $blanco;
+}
+
+.contenedor-servicio{
+
+    @include tablet{
+
+        height: 100vh;
+        @include grid (2, calc($separacion / 2 ));
+
+    }
+    .imagen{
+        height: 10rem;
+        background-image: url(../img/12.jpg);//imagen prueba 1
+        background-size: cover;
+        background-position: center center;
+
+        @include telefono{
+            height: auto;
+
+        }
+
+
+    }
+}
+
+
+.app{
+    width: 100%;
+    margin: 0 auto;
+    padding:  1rem 2rem;
+
+    .seccion{
+        display:  none;
+        margin-top: calc($separacion / 2);
+
+        //Semuestra solo en el diseño 1, luego no se muestrar porque la oculto 
+        //utulizando js para mostrar y ocultar la seccio
+        // &:first-of-type{
+        //     display: block;
+        // }
+
+        .text-center{
+            color: $oscurovioleta;
+            // text-shadow: .1px .9px .9px $oscurovioleta;
+        }
+
+
+    }
+}
+h1{
+    -webkit-text-stroke: 2px $clarovioleta;
+    color: $blanco;
+    text-shadow: -3px 3px 0 $clarovioleta, -8px 10px 0
+}
+
+
+.mostrar-seccion{
+    display: block!important;
+}

@@ -1,0 +1,42 @@
+.paginacion{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+
+
+    button{
+        background-color: $bold;
+        padding: .5rem 2rem;
+        display: block;
+        text-indent: center;
+        color: $oscurovioleta;
+        border: none;
+        border-radius: 2rem;
+        font-weight: $bold;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+
+        /*sombra*/
+
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        border-top: 1px solid rgba(255,255,255, 0.5);
+        border-left: 1px solid rgba(255,255,255, 0.5);
+        backdrop-filter: blur(5px);
+
+        &.ocultar{
+            visibility: hidden;
+        }
+
+        &:hover{
+
+            box-shadow: 0 0 0.5px $violeta,
+                        0 0 3px $violeta,
+                        0 0 5px $violeta,
+                        0 0 5px $violeta;
+                cursor: pointer;
+
+        }
+    }
+
+}
+

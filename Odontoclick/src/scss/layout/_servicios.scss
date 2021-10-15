@@ -1,0 +1,73 @@
+.listado-servicios{
+
+    @include telefono{
+
+        @include grid(2, .5rem);
+
+    }
+    @include tablet{
+
+        @include grid(3, 1rem);
+
+
+    }
+    @include desktop{
+
+        @include grid(4, 1rem);
+
+    }
+
+    .servicios{
+        margin-bottom: 1rem;
+        background-color: $blanco;
+        padding: calc( $separacion / 4);
+        border-radius: 1rem;
+        box-shadow: 4px 4px 5px rgba(0,0,0,0.2);
+        border-top: 1px solid rgba(255,255,255, 0.5);
+        border-left: 1px solid rgba(255,255,255, 0.5);
+        backdrop-filter: blur(5px);
+
+
+
+
+        @include tablet{
+            margin-bottom: 0;
+
+        }
+
+
+        p{
+            margin: 0 0 calc( $separacion / 4) 0;
+        }
+
+        .nombre-servicios{
+            color: $oscurovioleta;
+
+        }
+        .precio-servicio{
+            color: $oscurovioleta;
+            margin: 0;
+            font-size: 1.5rem;
+            font-weight: $bold;
+
+        }
+        &.seleccionado{
+            background-color: $clarovioleta;
+
+            p{
+                color: $blanco;
+            }
+
+        }
+        &:hover{
+            box-shadow: 0 0 0.5px $violeta,
+                        0 0 3px $violeta,
+                        0 0 5px $violeta,
+                        0 0 5px $violeta;
+            cursor: pointer;
+            color: $violeta;
+        }
+
+    }
+
+}

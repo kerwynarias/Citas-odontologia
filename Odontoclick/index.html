@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Odontologa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+    <!-- <script src=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css crossorigin="anonymous"></script> -->
+</head>
+
+<body>
+
+    <div class="contenedor-servicio">
+        <div class="imagen"></div>
+        <div class="app">
+            <header class="header">
+                <h1 class="text-borde">Odontoclick</h1>
+            </header>
+            <nav class="tabs">
+                <button type="button" data-paso="1">Servicios</button>
+                <button type="button" data-paso="2">Cliente</button>
+                <button type="button" data-paso="3">Resumen</button>
+                <button type="button" data-paso="4">Pago</button>
+
+            </nav>
+
+            <!--contenido principal de la app-->
+            <div id="paso-1" class="seccion">
+                <h2>Servicios</h2>
+                <p class="text-center">Elige tus servicios a Continuacion</p>
+                <div id="servicios" class="listado-servicios"></div>
+            </div>
+            <div id="paso-2" class="seccion">
+                <h2>Tus Datos</h2>
+                <p class="text-center">Coloca tus datos y fecha de cita</p>
+                <form class="formulario">
+                        <div class="campo">
+                        <label for="nombre"></label>
+                        <input id="nombre" type="text" placeholder=" Nombre "required="obligatorio">
+                    </div>
+                    <div class="campo">
+                        <label for="nombre"></label>
+                        <input id="nombre" type="text" placeholder=" Apellido ">
+                    </div>
+                    <div class="campo">
+                        <label for="nombre"></label>
+                        <input id="nombre" type="numbrer" placeholder=" telefono ">
+                    </div>
+                    <div class="campo">
+                        <label for="nombre"></label>
+                        <input id="nombre" type="numbrer" placeholder=" @ ">
+                    </div>
+                    <div class="campo">
+                        <label for="fecha"></label>
+                        <input id="fecha" type="date">
+                    </div>
+                    <div class="campo">
+                        <label for="hora"></label>
+                        <input id="fecha" type="time" >
+                    </div>
+                </form>
+            </div>
+            <div id="paso-3" class="seccion contenido-resumen">
+                <h2>Resumen de Cita</h2>
+            </div>
+            <div id="paso-4" class="seccion">
+                <h2>Pago</h2>
+            </div>
+
+            <div class="paginacion">
+                <button id="anterior">
+                    &laquo; Anterior
+                </button>
+                <button id="siguiente">
+                    siguiente &raquo;
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="build/js/bundle.min.js"></script>
+</body>
+
+</html>
