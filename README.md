@@ -1,2 +1,2 @@
 # Citas-odontologia
-Prototipo de citas y sservicios
+Prototipo de citas y servicios
